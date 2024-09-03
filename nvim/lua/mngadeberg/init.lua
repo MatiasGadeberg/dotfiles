@@ -1,7 +1,6 @@
 require("mngadeberg.set")
 require("mngadeberg.remap")
 require("mngadeberg.lazy_init")
-vim.cmd("language en_US")
 
 local augroup = vim.api.nvim_create_augroup
 local MatiasGadebergGroup = augroup('MatiasGadeberg', {})
