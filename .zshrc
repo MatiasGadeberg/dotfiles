@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export GOBIN="$HOME/go/bin"
+export TERM="screen-256color"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -127,7 +128,7 @@ up () {
 #####################
 
 # Better listing
-alias ls="ls -lAhG"
+alias ll="ls -lAhG"
 
 # confirm before overwriting something
 alias cp="cp -i"
@@ -164,6 +165,9 @@ alias dnpm='docker run -it -v `pwd`:/app --rm personal-setup_npm'
 alias dnode='docker run -it -v `pwd`:/app --rm personal-setup_node'
 alias dpy='docker run -it -v `pwd`:/app --rm personal-setup_python'
 alias pgadmin='docker run -p 80:80 --name pgadmin -v pgadmin-servers:/pgadmin4/servers.json -v pgadmin-config:/var/lib/pgadmin --env-file ~/.env/pgadmin.env -d --rm dpage/pgadmin4'
+
+###### PROJECT ALIASES #########
+source ~/.zsh/zshalias
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

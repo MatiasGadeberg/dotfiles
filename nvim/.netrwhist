@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/hmgd/projects/github/private/dotfiles/nvim'
+let g:netrw_dirhist_2='/home/hmgd/projects/github/private/dotfiles/nvim/lua'
+let g:netrw_dirhist_1='/home/hmgd/projects/github/private/dotfiles/nvim'
+let g:netrw_dirhist_0='/home/hmgd/.config/nvim/lua/mngadeberg'
+let g:netrw_dirhist_9='/home/hmgd/.config/nvim/lua'
+let g:netrw_dirhist_8='/home/hmgd/.config/nvim'
+let g:netrw_dirhist_7='/home/hmgd/.config'
+let g:netrw_dirhist_6='/home/hmgd'
+let g:netrw_dirhist_5='/home/hmgd/projects/github/private/dotfiles/nvim/lua/mngadeberg'
+let g:netrw_dirhist_4='/home/hmgd/projects/github/private/dotfiles/nvim/lua/mngadeberg/lazy'
