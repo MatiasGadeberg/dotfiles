@@ -5,6 +5,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GOBIN="$HOME/go/bin"
 export TERM="screen-256color"
+export PATH="$HOME/.tmuxifier/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -126,6 +127,8 @@ up () {
 #####################
 # ALIASES
 #####################
+
+alias nuget="mono /usr/bin/nuget.exe"
 
 # Better listing
 alias ll="ls -lAhG"
