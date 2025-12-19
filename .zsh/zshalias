@@ -1,0 +1,7 @@
+# Project Alias for the zsh setup
+alias gpi='tmuxifier session nngpi' 
+alias sal='cd ~/projects/ado/nn/gxpsal' 
+alias clc='tmuxifier session clc' 
+
+# dotfiles alias
+alias dotfiles='cd ~/projects/github/private/dotfiles' 

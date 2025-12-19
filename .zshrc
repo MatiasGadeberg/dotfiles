@@ -171,7 +171,10 @@ alias pgadmin='docker run -p 80:80 --name pgadmin -v pgadmin-servers:/pgadmin4/s
 
 ###### PROJECT ALIASES #########
 source ~/.zsh/zshalias
+source ~/.zsh/nnsetup
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH=/opt/oracle/instantclient_23_26:$PATH
+export LD_LIBRARY_PATH=/opt/oracle/instantclient_23_26:$LD_LIBRARY_PATH

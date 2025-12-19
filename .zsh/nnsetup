@@ -1,0 +1,1 @@
+export NODE_EXTRA_CA_CERTS="/usr/local/share/ca-certificates/ZscalerRootCertificate-2048-SHA256.crt"
