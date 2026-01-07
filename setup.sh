@@ -1,9 +1,5 @@
 #!/bin/bash
 
-# --- Configuration ---
-# Path where Oh My Zsh installs itself
-OMZ_INSTALL_DIR="$HOME/.oh-my-zsh"
-
 # --- Function Definitions ---
 
 # Function to check if a command exists
@@ -120,7 +116,7 @@ git_install() {
 # Installation of tools
 ## apt installable tools
 sudo apt update
-sudo apt install -y zsh git tmux gcc nodejs npm unzip curl build-essential
+sudo apt install -y zsh git tmux gcc nodejs npm unzip curl build-essential ripgrep
 
 ## Git clone installations
 ## tmux package manager (TPM)
@@ -172,6 +168,18 @@ else
     echo "NVM is already installed."
 fi
 
+### Claude code installation
+CLAUDE_INSTALL_DIR="$HOME/.local/bin/claude"
+if [ ! -d "$CLAUDE_INSTALL_DIR" ]; then
+    curl -fsSL https://claude.ai/install.sh | bash
+    if [ ! -d "$CLAUDE_INSTALL_DIR" ]; then
+        echo "Error: Claude code installation failed. Please check your internet connection or try manually."
+        exit 1
+    fi
+    echo "Claude code installed successfully."
+else
+    echo "Claude code is already installed."
+fi
 
 
 # 2. Set Zsh as default shell if not already
@@ -185,6 +193,7 @@ fi
 
 # 3. Install Oh My Zsh if not present
 echo "--- Oh My Zsh Installation ---"
+OMZ_INSTALL_DIR="$HOME/.oh-my-zsh"
 if [ ! -d "$OMZ_INSTALL_DIR" ]; then
     echo "Oh My Zsh is not installed. Installing now..."
     # Suppress the default OMZ prompt to change default shell, as we handle it above
