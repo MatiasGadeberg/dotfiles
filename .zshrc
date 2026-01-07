@@ -5,7 +5,17 @@
 export ZSH="$HOME/.oh-my-zsh"
 export GOBIN="$HOME/go/bin"
 export TERM="screen-256color"
+#tmuxifier
 export PATH="$HOME/.tmuxifier/bin:$PATH"
+#neovim
+export PATH="/opt/nvim/:$PATH"
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -173,8 +183,11 @@ alias pgadmin='docker run -p 80:80 --name pgadmin -v pgadmin-servers:/pgadmin4/s
 source ~/.zsh/zshalias
 source ~/.zsh/nnsetup
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+###### Below this line is auto inserted by installer scripts #########
 export PATH=/opt/oracle/instantclient_23_26:$PATH
 export LD_LIBRARY_PATH=/opt/oracle/instantclient_23_26:$LD_LIBRARY_PATH
+
+# bun completions
+[ -s "/home/hmgd/.bun/_bun" ] && source "/home/hmgd/.bun/_bun"
+
+
