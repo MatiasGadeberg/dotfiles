@@ -169,7 +169,7 @@ else
 fi
 
 ### Claude code installation
-CLAUDE_INSTALL_DIR="$HOME/.local/bin/claude"
+CLAUDE_INSTALL_DIR="$HOME/.local/share/claude"
 if [ ! -d "$CLAUDE_INSTALL_DIR" ]; then
     curl -fsSL https://claude.ai/install.sh | bash
     if [ ! -d "$CLAUDE_INSTALL_DIR" ]; then
