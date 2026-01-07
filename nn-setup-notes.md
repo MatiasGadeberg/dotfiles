@@ -45,4 +45,4 @@ Setup script installs claude code already - just need to add this to ~/.claude/s
    ]
 }
 ```
-
+token is retrieved from [here](https://novonordisk.sharepoint.com/sites/datacraft/SitePages/AI-Marketplace.aspx)
